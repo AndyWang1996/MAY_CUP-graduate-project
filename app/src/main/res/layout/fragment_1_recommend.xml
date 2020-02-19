@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample_background_1"
+    tools:context=".Activity.Fragment1">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageButton
+            android:id="@+id/user_graph"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/Transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_image" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/user_graph"
+            android:layout_above="@+id/choice_button"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/float_window_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.5">
+
+                <ImageView
+                    android:id="@+id/float_window_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/default_image"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/float_window_p_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:gravity="center_vertical|start"
+                    android:textStyle="bold"
+                    android:text="@string/DEFAULT" />
+
+                <TextView
+                    android:id="@+id/float_window_p_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="23sp"
+                    android:textStyle="normal"
+                    android:gravity="center_horizontal|end"
+                    android:textColor="@color/RoyalBlue"
+                    android:text="@string/DEFAULT" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choice_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                app:srcCompat="@drawable/left"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/fragment_1_dislike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:scaleType="fitCenter"
+                android:text="@string/dislike"/>
+
+            <Button
+                android:id="@+id/fragment_1_like"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:scaleType="fitCenter"
+                android:text="@string/like"/>
+
+            <ImageButton
+                android:id="@+id/right_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                app:srcCompat="@drawable/right"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <ImageView
+            android:id='@+id/temp_view'
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src='@color/Transparent'
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

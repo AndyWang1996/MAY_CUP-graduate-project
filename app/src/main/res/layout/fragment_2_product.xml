@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Fragment2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1000">
+
+            <ImageView
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+            <Button
+                android:id="@+id/left_list_button1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:text="@string/left_button_1" />
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+            <Button
+                android:id="@+id/left_list_button2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:text="@string/left_button_2" />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+            <Button
+                android:id="@+id/left_list_button3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:text="@string/left_button_3" />
+
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+            <Button
+                android:id="@+id/left_list_button4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:text="@string/left_button_4" />
+
+            <ImageView
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+            <Button
+                android:id="@+id/left_list_button5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparent"
+                android:text="@string/left_button_5" />
+
+            <ImageView
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/line" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/temp_view2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:src="@color/Transparent"
+            android:visibility="invisible" />
+
+
+        <ListView
+            android:id="@+id/right_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="400"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

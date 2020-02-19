@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">MAY_CUP</string>
+    <string name="Search">Search</string>
+    <string name="Product">Product</string>
+    <string name="Blog">Detail</string>
+    <string name="Cart">History</string>
+    <string name="Recommend">Recommend</string>
+
+    <string name="DEFAULT">DEFAULT</string>
+
+    <string name="left_button_1">Recommend</string>
+    <string name="left_button_2">Make up</string>
+    <string name="left_button_3">Skin care</string>
+    <string name="left_button_4">Equipment</string>
+    <string name="left_button_5">Big name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dislike">IGNORE</string>
+    <string name="like">DETAIL</string>
+
+</resources>
